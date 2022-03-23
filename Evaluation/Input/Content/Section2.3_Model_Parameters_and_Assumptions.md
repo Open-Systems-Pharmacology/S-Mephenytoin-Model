@@ -13,7 +13,7 @@ Two linear metabolic pathways for S-mephenytoin were implement in the model:
 * CYP2C19
 * CYP2C9
 
-Additionally, glomerular filtration was implemented with assumed GFR fraction of 1. No active renal excretion described in literature. Renal clearance is minor compared to overall plasma clearance ([Jacqz 1986](# 5 References)) and can be described by glomerular filtration.
+Additionally, glomerular filtration was implemented with assumed GFR fraction of 1. No active renal excretion described in literature. Renal clearance is minor compared to overall plasma clearance ([Jacqz 1986](#5-references)) and can be described by glomerular filtration.
 
 ### 2.3.5 Automated Parameter Identification
 
