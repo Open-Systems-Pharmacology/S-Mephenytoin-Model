@@ -5,7 +5,7 @@ Only the  S-enantiomer of mephenytoin is modeled. The modeling work flow can be 
 | **Modelling step**                                           | **Data used / comment**                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **1.) Development of mean po model (no i.v. data  available)** | IVIVE based on physico-chemistry and in vitro  metabolization or recalculated in vivo clearance.  Alternative middle out fits to in vivo data were tried but could not improve DDI prediction significantly. Additional limited data lead to identifiability problems. |
-| **2.) Evaluation of p.o. model with virtual PK-Sim  population** | Range and mean plasma profiles after p.o. admininstration for the study population was in line with the PK-Sim in-built variability of  CYP2C9 and CYP2C19. |
+| **2.) Evaluation of p.o. model with virtual PK-Sim  population** | Range and mean plasma profiles after p.o. administration for the study population was in line with the PK-Sim in-built variability of  CYP2C9 and CYP2C19. |
 
 The predefined “Standard European Male for DDI” individual was used (age = 30 y, weight = 73 kg, height = 176 cm, BMI = 23.57 kg/m2). CYP2C19 expression from the PK-Sim in-built RT-PCR database was added.
 
