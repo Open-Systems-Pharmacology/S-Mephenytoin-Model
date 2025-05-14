@@ -1,9 +1,9 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v2.3/schemas/OSP_Qualification_Plan_Schema.json",
+    "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v3.3/schemas/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
             "Id": "S-mephenytoin",
-            "Path": "../S_Mephenytoin-Model.json",
+            "Path": "../../S_Mephenytoin-Model.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         }
@@ -123,24 +123,27 @@
             {
                 "Project": "S-mephenytoin",
                 "Simulation": "Adedoyin1998_S_Meph_CL_F_GFR_RR",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             },
             {
                 "Project": "S-mephenytoin",
                 "Simulation": "POP_Adedoyin1998_50 mg po_CYP2C19_geoSD2.25",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             }
         ],
         "GOFMergedPlots": [
             {
                 "Title": "S-mephenytoin concentration in plasma after 50 mg oral administration - mean data",
-                "SectionId": 32,
+                "SectionReference": "diagnostics-plots",
                 "Artifacts": [
                     "Plot",
                     "GMFE",
                     "Measure"
                 ],
-                "PlotType": "predictedVsObserved|residualsOverTime",
+                "PlotTypes": [
+                    "predictedVsObserved",
+                    "residualsOverTime"
+                ],
                 "Groups": [
                     {
                         "Caption": "Adedoyin 1998",
@@ -206,60 +209,60 @@
             "Project": "S-mephenytoin",
             "Name": "S-Mephenytoin",
             "Type": "Compound",
-            "SectionId": 31
+            "SectionReference": "final-input-parameters"
         }
     ],
     "Sections": [
         {
-            "Id": 1,
-            "Title": "1 Introduction",
+            "Reference": "introduction",
+            "Title": "Introduction",
             "Content": "Content/Section1_Introduction.md"
         },
         {
-            "Id": 2,
-            "Title": "2 Methods",
+            "Reference": "methods",
+            "Title": "Methods",
             "Content": "Content/Section2_Methods.md",
             "Sections": [
                 {
-                    "Id": 21,
-                    "Title": "2.1 Modeling Strategy",
+                    "Reference": "modeling-strategy",
+                    "Title": "Modeling Strategy",
                     "Content": "Content/Section2.1_Modeling_Strategy.md"
                 },
                 {
-                    "Id": 22,
-                    "Title": "2.2 Data",
+                    "Reference": "data",
+                    "Title": "Data",
                     "Content": "Content/Section2.2_Data.md"
                 },
                 {
-                    "Id": 23,
-                    "Title": "2.3 Model Parameters and Assumptions",
+                    "Reference": "model-parameters-and-assumptions",
+                    "Title": "Model Parameters and Assumptions",
                     "Content": "Content/Section2.3_Model_Parameters_and_Assumptions.md"
                 }
             ]
         },
         {
-            "Id": 3,
-            "Title": "3 Results and Discussion",
+            "Reference": "results-and-discussion",
+            "Title": "Results and Discussion",
             "Content": "Content/Section3_Results_and_Discussion.md",
             "Sections": [
                 {
-                    "Id": 31,
-                    "Title": "3.1 Final input parameters",
+                    "Reference": "final-input-parameters",
+                    "Title": "Final input parameters",
                     "Content": "Content/Input_table.md"
                 },
                 {
-                    "Id": 32,
-                    "Title": "3.2 Diagnostics Plots",
+                    "Reference": "diagnostics-plots",
+                    "Title": "Diagnostics Plots",
                     "Content": "Content/GOF_diagnostics.md"
                 },
                 {
-                    "Id": 33,
-                    "Title": "3.3 Concentration-Time Profiles",
+                    "Reference": "ct-profiles",
+                    "Title": "Concentration-Time Profiles",
                     "Content": "Content/Concentration_time_profiles.md",
                     "Sections": [
                         {
-                            "Id": 332,
-                            "Title": "3.3.1 Model Verification",
+                            "Reference": "model-verification",
+                            "Title": "Model Verification",
                             "Content": "Content/Concentration_time_profiles_verification.md"
                         }
                     ]
@@ -267,18 +270,18 @@
             ]
         },
         {
-            "Id": 4,
-            "Title": "4 Conclusion",
+            "Reference": "conclusion",
+            "Title": "Conclusion",
             "Content": "Content/Section4_Conclusion.md"
         },
         {
-            "Id": 5,
-            "Title": "5 References",
+            "Reference": "main-references",
+            "Title": "References",
             "Content": "Content/References.md"
         },
         {
-            "Id": 6,
-            "Title": "6 Glossary",
+            "Reference": "glossary",
+            "Title": "Glossary",
             "Content": "Content/glossary.md"
         }
     ],
